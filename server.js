@@ -19,6 +19,7 @@ mongoose.connect(process.env.MONGODB_URI, {
 
 // Routes
 app.use('/api/projects', require('./routes/projects'));
+app.use('/api/contact', require('./routes/contact'));
 
 // Start Server
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
